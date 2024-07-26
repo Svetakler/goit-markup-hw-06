@@ -290,13 +290,15 @@ img {
 /* -------SECTION 1---------*/
 .one {
   background-color: #2e2f42;
-  padding: 188px 0;
+  /* padding: 188px 0; */
+
+  padding: 72px 52px;
+
   max-width: 1440px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; 
+   display: flex;
+  align-items: center; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -305,20 +307,43 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob-min.jpg);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x-mob-min.jpg);
+  }
 }
 
 .main-section-text {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px; */
+
+  font-size: 36px;
+
   letter-spacing: 0.02em;
   text-align: center;
-  line-height: 1.07;
+  /* line-height: 1.07; */
+
+  line-height: 1.11;
+
   color: #fff;
-  max-width: 496px;
+  /* max-width: 496px; */
+
+  max-width: 216px;
+
   margin: 0 auto;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+
+  margin-bottom: 72px;
 }
 
 .button {
@@ -590,7 +615,9 @@ img {
 /*-----------------FOOTER----------------*/
 footer {
   background: #2e2f42;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+
+  padding: 96px 16px;
 }
 
 .footer-logo {
@@ -621,11 +648,15 @@ footer {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
+
+  /* display: flex;
+  align-items: baseline; */
 }
-.footer-nav {
+/* .footer-nav {
   margin-right: 120px;
-}
+} */
 .footer-media-text {
   font-weight: 500;
   font-size: 16px;
@@ -693,7 +724,7 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .subscribe-btn {
@@ -734,6 +765,8 @@ footer {
 .email-input:focus {
   border-color: #404bbf;
 }
+
+/* modal */
 
 .backdrop {
   position: fixed;
@@ -1041,6 +1074,42 @@ footer {
     display: none;
   }
 
+  /* section 1 hero */
+
+  .one {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab-min.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .one {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x-tab-min.jpg);
+    }
+  }
+
+  .main-section-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
   /* section 2 hiden */
   .specias {
     padding-top: 96px;
@@ -1110,6 +1179,43 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+  }
+
+  /* section 1 hero */
+
+  .one {
+    padding: 188px 0;
+    /* height: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .one {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x-min.jpg);
+    }
+  }
+
+  .main-section-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 48px;
   }
 
   /* section 2 hiden */
