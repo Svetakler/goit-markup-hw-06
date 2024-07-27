@@ -636,10 +636,6 @@ footer {
   padding: 96px 0;
 }
 
-.container.footer-container {
-  padding: 0 108px;
-}
-
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1225,8 +1221,10 @@ footer {
 
   .container.footer-container {
     display: flex;
-    gap: 0;
-    padding: 0 15px;
+    gap: 72px 24px;
+
+    padding: 0 108px;
+    /* padding: 0 15px; */
     flex-direction: row;
   }
 
@@ -1405,7 +1403,10 @@ footer {
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
   /* footer */
-
+  .container.footer-container {
+    padding: 0 15px;
+    gap: 0;
+  }
   footer {
     padding: 100px 0;
   }
