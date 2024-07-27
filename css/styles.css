@@ -213,9 +213,11 @@ img {
   height: 100%;
 }
 
-.mobile-nav-list {
+.mobile-navigation {
   margin-bottom: auto;
+}
 
+.mobile-nav-list {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -247,6 +249,10 @@ img {
   gap: 40px;
 }
 
+.mobile-info {
+  font-style: normal;
+}
+
 .mobile-info-list {
   margin-bottom: 48px;
   display: flex;
@@ -265,7 +271,8 @@ img {
 }
 
 .mobile-info-link:hover,
-.mobile-info-link:focus {
+.mobile-info-link:focus,
+.active {
   color: #4d5ae5;
 }
 
@@ -288,6 +295,10 @@ img {
 }
 
 /* -------SECTION 1---------*/
+.container.container-one {
+  max-width: 320px;
+}
+
 .one {
   background-color: #2e2f42;
   /* padding: 188px 0; */
@@ -623,6 +634,10 @@ footer {
   /* padding: 100px 0; */
 
   padding: 96px 0;
+}
+
+.container.footer-container {
+  padding: 0 108px;
 }
 
 .footer-logo {
@@ -1122,7 +1137,9 @@ footer {
   }
 
   /* section 1 hero */
-
+  .container.container-one {
+    max-width: 768px;
+  }
   .one {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -1208,7 +1225,8 @@ footer {
 
   .container.footer-container {
     display: flex;
-    gap: 72px 24px;
+    gap: 0;
+    padding: 0 15px;
     flex-direction: row;
   }
 
@@ -1239,6 +1257,10 @@ footer {
 
   .footer-nav {
     margin-right: 24px;
+  }
+
+  .email-input {
+    width: 264px;
   }
 
   /* backdrop */
@@ -1273,6 +1295,7 @@ footer {
 
   .adress-list-info {
     padding: 24px 0;
+    font-size: 16px;
   }
 
   .header-menu-link {
